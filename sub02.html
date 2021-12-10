@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASIO Korea</title>
+  <link rel="stylesheet" href="css/import.css">
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/sub02_script.js"></script>
+  <script src="js/swiper-bundle.min.js.map"></script>
+</head>
+<body>
+  <div id="wrap">
+    <form>
+      <header class="clear">
+        <div class="inner">
+          <h1 class="logo clear">
+            <a href="index.html" class="hidden">logo</a>
+            <span>korea</span>
+          </h1><!--.logo-->
+          <div class="h_btn">
+            <div class="lang">
+              <button type="button" class="btn_lang hidden">언어</button>
+              <ul>
+                <li><a href="#">korea</a></li>
+                <li><a href="#">english</a></li>
+                <li><a href="#">portugal</a></li>
+                <li><a href="#">spanish</a></li>
+                <li><a href="#">japanese</a></li>
+                <li><a href="#">chinese</a></li>
+              </ul>
+            </div><!--.lang-->
+            <div class="search">
+              <button type="button" class="btn_h_search hidden">검색</button>
+              <fieldset>
+                <legend>검색</legend>
+                <input type="text" placeholder="검색어 입력">
+                <button type="button" class="btn_h_search"></button>
+              </fieldset>
+            </div>
+          </div><!--.h_btn-->
+          <div class="menu">
+            <button type="button" class="btn_menu hidden">메뉴</button>
+            <nav>
+              <ul>
+                <li><a href="sub01.html">스토어</a></li>
+                <li><a href="sub02.html">고객지원</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">매장찾기</a></li>
+              </ul>
+            </nav>
+          </div><!--.menu-->
+        </div><!--.inner-->
+      </header>
+
+      <div id="sub02_container">
+        <div class="sub02_visual">
+          <h2>환영합니다. 무엇을 도와드릴까요?</h2>
+          <div class="helf" style="display: none;">
+            <div class="helf01">
+              <h4>직접 해결<span>하는 방법을<br>알려드릴게요.</span></h4>
+              <button>open</button>
+              <ul>
+                <li><a href="#">제품 문제 해결</a></li>
+                <li><a href="#">동영상 가이드</a></li>
+                <li><a href="#">드라이버/SW</a></li>
+                <li><a href="#">사용설명서</a></li>
+              </ul>
+            </div><!--.helf01-->
+            <div class="helf02">
+              <h4><span>서비스 및 제품 </span>궁금증<span>을</span> <br>상담<span>해드릴게요.</span></h4>
+              <button>open</button>
+              <ul>
+                <li><a href="#">챗봇 상담</a></li>
+                <li><a href="#">전화 상담 예약</a></li>
+                <li><a href="#">이메일 문의</a></li>
+                <li><a href="#">영상 상담 예약</a></li>
+                <li><a href="#">원격 상담 예약</a></li>
+              </ul>
+            </div><!--.helf02-->
+            <div class="helf03">
+              <h4>출장/방문 예약<span>을 <br>도와드릴게요.</span></h4>
+              <button>open</button>
+              <ul>
+                <li><a href="#">출장 서비스 예약</a></li>
+                <li><a href="#">센터 방문 예약</a></li>
+              </ul>
+            </div><!--.helf03-->
+          </div><!--.helf-->
+
+
+          <div class="helf">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="helf01 helfBtn">
+                    <h4>직접 해결<span>하는 방법을<br>알려드릴게요.</span></h4>
+                    <button>open</button>
+                    <ul>
+                      <li><a href="#">제품 문제 해결</a></li>
+                      <li><a href="#">동영상 가이드</a></li>
+                      <li><a href="#">드라이버/SW</a></li>
+                      <li><a href="#">사용설명서</a></li>
+                    </ul>
+                  </div><!--.helf01-->
+                </div>
+                <div class="swiper-slide">
+                  <div class="helf02 helfBtn">
+                    <h4><span>서비스 및 제품 </span>궁금증<span>을</span> <br>상담<span>해드릴게요.</span></h4>
+                    <button>open</button>
+                    <ul>
+                      <li><a href="#">챗봇 상담</a></li>
+                      <li><a href="#">전화 상담 예약</a></li>
+                      <li><a href="#">이메일 문의</a></li>
+                      <li><a href="#">영상 상담 예약</a></li>
+                      <li><a href="#">원격 상담 예약</a></li>
+                    </ul>
+                  </div><!--.helf02-->
+                </div>
+                <div class="swiper-slide">
+                  <div class="helf03 helfBtn">
+                    <h4>출장/방문 예약<span>을 <br>도와드릴게요.</span></h4>
+                    <button>open</button>
+                    <ul>
+                      <li><a href="#">출장 서비스 예약</a></li>
+                      <li><a href="#">센터 방문 예약</a></li>
+                    </ul>
+                  </div><!--.helf03-->
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="paging clear">
+            <ul>
+              <li><a href="#" class="hidden">page01</a></li>
+              <li><a href="#" class="hidden">page02</a></li>
+              <li><a href="#" class="hidden">page03</a></li>
+            </ul>
+          </div> -->
+          <!--.paging-->
+
+          <div class="search">
+            <fieldset class="clear">
+              <legend>검색</legend>
+              <input type="text" placeholder="검색어를 입력해주세요. (예: 모델명, 증상등)">
+              <button type="button" class="hidden">검색버튼</button>
+            </fieldset>
+          </div>
+        </div><!--.sub02_visual-->
+
+        <div class="sub02_often">
+          <div class="inner">
+            <h2>자주 찾는 질문</h2>
+            <div class="question clear">
+              <ul>
+                <li class="question01">
+                  <a href="#">
+                    <span>logo</span>
+                    <h4>스피커에서 소리가 나오지 않아요.</h4>
+                    <p>전자악기>스피커</p>
+                  </a>
+                </li>
+                <li class="question02">
+                  <a href="#">
+                    <span>logo</span>
+                    <h4>시계의 베터리 교체 주기는 어느 정도인가요?</h4>
+                    <p>시계>베터리</p>
+                  </a>
+                </li>
+                <li class="question03">
+                  <a href="#">
+                    <span>logo</span>
+                    <h4>스트랩의 수명과 관리방법이 궁금합니다.</h4>
+                    <p>시계>스트랩</p>
+                  </a>
+                </li>
+              </ul>
+            </div><!--.question-->
+            <a href="#" class="more">+ 더보기</a>
+          </div><!--.inner-->
+        </div><!--.often-->
+
+        <div class="sub02_reservation clear">
+          <div class="inner">
+            <div class="reservation">
+              <h3>출장 서비스 예약</h3>
+              <fieldset>
+                <legend>이름</legend>
+                <label for="reser_name">이름</label>
+                <input type="text" id="reser_name" placeholder="이름 입력">
+              </fieldset>
+              <fieldset>
+                <legend>휴대폰번호</legend>
+                <label for="reser_name">휴대폰번호</label>
+                <input type="text" id="reser_num" placeholder="휴대폰번호 입력">
+              </fieldset>
+              <fieldset class="clear">
+                <legend>주소</legend>
+                <label for="reser_name">주소</label>
+                <input type="text" id="reser_adr1" placeholder="우편번호">
+                <input type="text" id="reser_adr2" placeholder="주소">
+                <button type="button" class="adr_find">주소 찾기</button>
+                <input type="text" id="reser_adr3" placeholder="단독주택 등일 경우 층수 또는 호수 등을 입력하세요.">
+              </fieldset>
+              <button type="button" class="reser_btn">예약하기</button>
+            </div><!--.reservation-->
+            <div class="check">
+              <h3>문의/예약 결과 조회</h3>
+              <fieldset>
+                <legend>이름</legend>
+                <label for="check_name">이름</label>
+                <input type="text" id="check_name" placeholder="이름 입력">
+              </fieldset>
+              <fieldset>
+                <legend>접수번호</legend>
+                <label for="reser_name">접수번호</label>
+                <input type="text" id="check_num" placeholder="접수번호 입력">
+              </fieldset>
+              <button type="button" class="check_bth">조회하기</button>
+  
+            </div><!--.reser_check-->
+          </div><!--.inner-->
+        </div><!--.sub02_reservation-->
+        
+      </div><!--#sub02_container-->
+      
+
+      <footer>
+        <div class="all_bar">
+          <button type="button" class="opne">전체 메뉴 보기</button>
+          <div class="all_menu clear">
+            <button type="button" class="close hidden">닫기</button>
+            <div class="menu_box01">
+              <h4><a href="#">스토어</a></h4>
+              <dl>
+                <dt><a href="#">시계</a></dt>
+                <dd>
+                  <ul>
+                    <li><a href="#">G-SHOCK</a></li>
+                    <li><a href="#">BABY-G</a></li>
+                    <li><a href="#">EDIFICE</a></li>
+                    <li><a href="#">SHEEN</a></li>
+                    <li><a href="#">OCEANUS</a></li>
+                    <li><a href="#">CASIO</a></li>
+                    <li><a href="#">PRO TREK</a></li>
+                  </ul>
+                </dd>
+                <dt><a href="#">전자악기</a></dt>
+                <dd>
+                  <ul>
+                    <li><a href="#">EDICELVIANOFICE</a></li>
+                    <li><a href="#">CASIOTONE</a></li>
+                    <li><a href="#">PRIVIA</a></li>
+                  </ul>
+                </dd>
+                <dt><a href="#">계산기</a></dt>
+                <dt><a href="#">핸드헬드단말기</a></dt>
+                <dt><a href="#">금전등록기</a></dt>
+              </dl>
+            </div><!--.menu_box01-->
+            <div class="menu_box02">
+              <h4><a href="#">고객지원</a></h4>
+              <dl>
+                <dd>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">설명서</a></li>
+                    <li><a href="#">다운로드</a></li>
+                    <li><a href="#">컴퓨터 OS 호환성</a></li>
+                    <li><a href="#">스마트폰 호환성</a></li>
+                    <li><a href="#">제품 수리/부품</a></li>
+                    <li><a href="#">제품 구매 정보</a></li>
+                  </ul>
+                </dd>
+              </dl>
+              <h4><a href="#">회사소개</a></h4>
+              <dl>
+                <dd>
+                  <ul>
+                    <li><a href="#">기업정보</a></li>
+                    <li><a href="#">투자자 정보</a></li>
+                    <li><a href="#">뉴스</a></li>
+                  </ul>
+                </dd>
+              </dl>
+              <h4><a href="#">매장찾기</a></h4>
+            </div><!--.menu_box02-->
+          </div><!--.all_menu-->
+        </div><!--.all_bar-->
+
+        <div class="inner">
+          <div class="f_info">
+            <div class="info clear">
+                <ul>
+                  <li>
+                    <a href="#">개인정보처리방침</a>
+                  </li>
+                  <li>
+                    <a href="#">이용약관</a>
+                  </li>
+                  <li>
+                    <a href="#">문의하기</a>
+                  </li>
+                  <li>
+                    <a href="#">가이드</a>
+                  </li>
+                </ul>
+            </div><!--.info-->
+            <div class="sns clear">
+              <ul>
+                <li><a href="#" class="tiwt hidden">tiwt</a></li>
+                <li><a href="#" class="yout hidden">yout</a></li>
+                <li><a href="#" class="face hidden">face</a></li>
+                <li><a href="#" class="line hidden">line</a></li>
+              </ul>
+            </div><!--.sns-->
+            <div class="f_logo_box">
+              <h4 class="f_logo hidden"><a href="#">f_logo</a></h4>
+              <span>
+                CASIO @2021 CASIO COMPUTER CO. LTD
+              </span>
+            </div><!--.f_logo_box-->
+          </div><!--.f_info-->
+        </div><!--.inner-->
+      </footer>
+    </form>
+  </div><!--#wrap-->
+</body>
+</html>
