@@ -25,6 +25,10 @@ $(document).ready(function(){ //START
   })//scroll
 
 
+$("header .menu .btn_menu").click(function(){
+  $("header .menu nav").stop().slideDown();
+});
+
 
 
 

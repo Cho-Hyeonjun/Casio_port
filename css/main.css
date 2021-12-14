@@ -88,6 +88,7 @@ header .h_btn .search fieldset{display: none;
   font-weight: bold;
   z-index: 2;
   border-radius: 5px;
+  overflow: hidden;
 }
 .lang li{
   height: 30px;
@@ -110,19 +111,29 @@ header .menu{
 header .menu .btn_menu{
   background-image: url(../img/menu_mobile.png);
 }
-header .menu .btn_menu:hover + nav{display: block;}
+/* header .menu .btn_menu:hover + nav{display: block;} */
 header .menu nav{display: none;
   position: absolute; top: 30px; right: 0;
   width: 100px;
   background-color: #fff;
   font-size: 1.4rem;
   font-weight: bold;
+  z-index: 2;
+  border-radius: 5px
 }
 header .menu nav li{
   height: 30px;
   line-height: 30px;
   border-bottom: 1px solid #003296;
-  text-align: center;}
+  text-align: center;
+  transition: all 0.3s;
+}
+header .menu nav li:hover{
+  background-color: #003296;
+}
+header .menu nav li:hover a{
+  color: #fff;
+}
 
 
 #container .visual01{
@@ -410,6 +421,14 @@ footer .sns li:nth-child(4) a{background-image: url(../img/sns_l.png);}
   .f_info{position: relative;}
   footer .sns{position: absolute; top: 0; right: 0; margin: 14px 5px 0 0;}
   footer .f_logo_box{margin-top: 15px;} 
+
+  header .menu nav li:hover{
+    background-color: transparent;
+  }
+  header .menu nav li:hover a{
+    color: #222;
+  }
+
 
 
   
