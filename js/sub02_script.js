@@ -67,6 +67,7 @@ $(document).ready(function(){ //START
       $(".helfBtn").children("ul").stop().show();
       $(".helfBtn").removeClass("on")
     });
+    $(".sub02_visual .helf li").css({"margin-bottom":"10px"}) 
   }
 
   function pcBox() {
@@ -75,12 +76,12 @@ $(document).ready(function(){ //START
     $(".helfBtn ul").hide();
 
     $(".helfBtn").mouseover(function(){
-      $(this).children("ul").stop().slideDown();
+      $(this).find("ul").stop().slideDown();
       $(this).addClass("on")
     });
     $(".helfBtn").mouseout(function(){
-      $(".helfBtn").children("ul").stop().slideUp();
-      $(".helfBtn").removeClass("on")
+      $(this).find("ul").stop().slideUp();
+      $(this).removeClass("on")
     });
   }
 

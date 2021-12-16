@@ -25,7 +25,7 @@ $(document).ready(function(){ //START
 
   
 
-  function mobileBox() {
+  function mobileBox() { // mobile start
     // 모바일에서 실행 내용
 
   $("header .menu .btn_menu").click(function(){
@@ -35,11 +35,11 @@ $(document).ready(function(){ //START
     $("header .menu nav").stop().slideUp();
   });
   
-  }
+  } //mobile end
 
-  function pcBox() {
+  function pcBox() { // PC start
     // PC에서 실행 내용
-  }
+  } // PC end
 
   $(".btn_h_search, .search fieldset").mouseover(function(){
     $("header .search fieldset").stop().show();

@@ -23,6 +23,9 @@
   #sub02_container .sub02_visual .helf > div:nth-child(3){
     display: none;
   } */
+  .sub02_visual{
+    height: 230px;
+  }
   .sub02_visual h4{
     font-size: 2.0rem;
     color: #fff;
@@ -43,6 +46,13 @@
   .sub02_visual .helf li:nth-child(2n-1){
     margin-right: 16px;
   } */
+  .sub02_visual .helf li{
+    width: calc((100% - 10px) / 2); 
+    float: left;
+  }
+  .sub02_visual .helf li:nth-child(2n-1){
+    margin-right: 10px;
+  }
   .sub02_visual .helf li a{
     display: block;
     margin: 0 auto;
@@ -197,7 +207,10 @@
     display: block;
     margin-bottom: 5px;
   }
-  .sub02_reservation input{font-size: 1.2rem;}
+  .sub02_reservation input{
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
   #reser_name,
   #check_name,
   #check_num,
@@ -207,7 +220,6 @@
     margin: 0 auto 10px;
     border-radius: 10px;
     border: 1px solid #c5c5c5;
-    padding: 0 5px;
   }
 
   #reser_adr1{
@@ -217,8 +229,7 @@
     margin-bottom: 5px;
     float: left;
     border-radius: 10px;
-    padding: 0 5px;
-    background-color: #c7cdd9;
+    background-color: #e1e5ec;
     border: none;
   }
   #reser_adr2{
@@ -227,8 +238,7 @@
     float: left;
     margin-right: 5px;
     border-radius: 10px;
-    padding: 0 5px;
-    background-color: #c7cdd9;
+    background-color: #e1e5ec;
     border: none;
   }
   .adr_find{
@@ -245,8 +255,7 @@
     height: 35px;
     margin-right: 5px;
     border-radius: 10px;
-    padding: 0 5px;
-    background-color: #c7cdd9;
+    background-color: #e1e5ec;
     border: none;
   }
   .reser_btn,
@@ -261,6 +270,16 @@
     line-height: 35px;
     text-align: center;
     font-weight: bold;
+  }
+
+  /* custom */
+  .helf .swiper-horizontal>.helf .swiper-pagination-bullets, .helf .swiper-pagination-bullets.helf .swiper-pagination-horizontal, .helf .swiper-pagination-custom, .helf .swiper-pagination-fraction{
+    bottom: 0px;
+  }
+  .helf .swiper{
+    overflow-y: visible;
+    overflow-x: hidden;
+    height: 260px;
   }
 
 
@@ -289,6 +308,12 @@
     display: block;
     color: #fff;
     font-size: 2rem;
+  }
+  #sub02_container .sub02_visual .helf{
+    padding-top: 40px;
+  }
+  .helf .swiper{
+    height: 350px;
   }
   .sub02_visual h4{
     font-size: 2.6rem;
@@ -450,8 +475,14 @@
 
 /**************** 1280 ~  px PC *********************/
 @media (min-width:1280px){
-  .sub02_visual .helf ul{
+  #sub02_container .sub02_visual .helf{
+    padding-top: 0px;
+  }
+  /* .sub02_visual .helf ul{
     width: 100%;
+  } */
+  .helf .swiper{
+    height: 450px;
   }
   /* #sub02_container .sub02_visual .helf{
     content: ''; display: block; clear: both;
@@ -467,7 +498,7 @@
   #sub02_container .sub02_visual .helf > div:nth-child(3){
     margin-right: 0;
   } */
-  .helf{margin-top: 110px;}
+  .helf{margin-top: 0;}
   /* .helf > div{
     position: relative;
     height: 100px;
@@ -483,19 +514,22 @@
   } */
 
   
+  .helf .swiper-slide{width: 340px;}
 
   .helf > div h4{opacity: 1.0;
     text-align: left;
+    width: 340px;
   }
   .helf > div span{opacity: 0.5;}
-  .sub02_visual .helf button{
+  .helfBtn{position: relative;}
+  .helfBtn button{
     display: block;
-    position: absolute; top: 15px; right: 0;
+    position: absolute; top: 10px; right: 10px;
     width: 40px;
     height: 22px;
     background: url(../img/sub02_visual_arrow.png) no-repeat center / 40px auto;
     color: transparent;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translate(0, -50%);
     font-size: 0;
     transition: all 0.5s;
   }
@@ -504,7 +538,9 @@
   .helfBtn.on button{
     transform: rotate(0deg);
   }
-
+  .sub02_visual .helf li{
+    margin-bottom: 10px;
+  }
   .sub02_visual .helf li a{transition: all 0.5s;}
   .sub02_visual .helf li:hover a{background-color: #003296;}
   .sub02_visual .paging{display: none;}
