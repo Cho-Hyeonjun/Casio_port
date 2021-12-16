@@ -57,7 +57,7 @@ $(document).ready(function(){ //START
 
   function mobileBox() {
     console.log("m");
-    $(".helfBtn ul").show();
+    // $(".helfBtn ul").show();
 
     $(".helfBtn").mouseover(function(){
       $(this).children("ul").stop().show();
@@ -73,7 +73,7 @@ $(document).ready(function(){ //START
   function pcBox() {
     console.log("pc");
     // PC에서 실행 내용
-    $(".helfBtn ul").hide();
+    // $(".helfBtn ul").hide();
 
     $(".helfBtn").click(function(){
       $(this).find("ul").slideToggle(function(){
