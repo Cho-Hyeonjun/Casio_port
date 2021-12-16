@@ -49,6 +49,7 @@
   .sub02_visual .helf li{
     width: calc((100% - 10px) / 2); 
     float: left;
+    margin-bottom: 10px;
   }
   .sub02_visual .helf li:nth-child(2n-1){
     margin-right: 10px;
@@ -99,6 +100,7 @@
     border-radius: 20px;
     padding: 5px 20px;
     box-shadow: 0 0 15px #000;
+    z-index: 99;
 
   }
   .sub02_visual .search input{
