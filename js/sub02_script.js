@@ -75,14 +75,16 @@ $(document).ready(function(){ //START
     // PC에서 실행 내용
     $(".helfBtn ul").hide();
 
-    $(".helfBtn").mouseover(function(){
-      $(this).find("ul").stop().slideDown();
-      $(this).addClass("on")
+    $(".helfBtn").click(function(){
+      $(this).find("ul").slideToggle(function(){
+        $(this).parents(".helfBtn").toggleClass("on");
+      });
+    
     });
-    $(".helfBtn").mouseout(function(){
-      $(this).find("ul").stop().slideUp();
-      $(this).removeClass("on")
-    });
+    // $(".helfBtn").mouseout(function(){
+    //   $(this).find("ul").stop().slideUp();
+    //   $(this).removeClass("on")
+    // });
   }
 
 
