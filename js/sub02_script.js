@@ -59,15 +59,15 @@ $(document).ready(function(){ //START
     console.log("m");
     $(".helfBtn ul").show();
 
-    $(".helfBtn").mouseover(function(){
-      $(this).children("ul").stop().show();
-      $(this).removeClass("on")
-    });
-    $(".helfBtn").mouseout(function(){
-      $(".helfBtn").children("ul").stop().show();
-      $(".helfBtn").removeClass("on")
-    });
-    $(".sub02_visual .helf li").css({"margin-bottom":"10px"}) 
+    // $(".helfBtn").mouseover(function(){
+    //   $(this).children("ul").stop().show();
+    //   $(this).removeClass("on")
+    // });
+    // $(".helfBtn").mouseout(function(){
+    //   $(".helfBtn").children("ul").stop().show();
+    //   $(".helfBtn").removeClass("on")
+    // });
+    // $(".sub02_visual .helf li").css({"margin-bottom":"10px"}) 
   }
 
   function pcBox() {
@@ -75,14 +75,16 @@ $(document).ready(function(){ //START
     // PC에서 실행 내용
     $(".helfBtn ul").hide();
 
-    $(".helfBtn").mouseover(function(){
-      $(this).find("ul").stop().slideDown();
-      $(this).addClass("on")
+    $(".helfBtn").click(function(){
+      $(this).find("ul").stop().slideToggle(function(){
+        $(this).parents(".helfBtn").toggleClass("on");
+      });
+    
     });
-    $(".helfBtn").mouseout(function(){
-      $(this).find("ul").stop().slideUp();
-      $(this).removeClass("on")
-    });
+    // $(".helfBtn").mouseout(function(){
+    //   $(this).find("ul").stop().slideUp();
+    //   $(this).removeClass("on")
+    // });
   }
 
 

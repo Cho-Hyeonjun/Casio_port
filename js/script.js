@@ -41,11 +41,11 @@ $(document).ready(function(){ //START
     // PC에서 실행 내용
   } // PC end
 
-  $(".btn_h_search, .search fieldset").mouseover(function(){
-    $("header .search fieldset").stop().show();
+  $(".btn_h_search, .h_search fieldset").mouseover(function(){
+    $("header .h_search fieldset").stop().show();
   });
-  $(".btn_h_search, .search fieldset").mouseout(function(){
-    $("header .search fieldset").stop().hide();
+  $(".btn_h_search, .h_search fieldset").mouseout(function(){
+    $("header .h_search fieldset").stop().hide();
   });
 
 

@@ -53,7 +53,7 @@ header .h_btn .btn_lang{
 header .h_btn .btn_h_search{
   background-image: url(../img/h_search.png);
 }
-header .h_btn .search fieldset{display: none;
+header .h_btn .h_search fieldset{display: none;
   background-color: #fff;
   position: absolute;
   top: -3px; right: -11px;
@@ -66,14 +66,14 @@ header .h_btn .search fieldset{display: none;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   padding: 0 10px;
 }
-.search fieldset input{
+.h_search fieldset input{
   float: left;
   line-height: 25px;
   height: 28px;
   width: 90px;
   border: none;
 }
-.search fieldset button{
+.h_search fieldset button{
   float: right;
   margin-top: 3px;
   
@@ -128,7 +128,10 @@ header .menu nav li{
   text-align: center;
   transition: all 0.3s;
 }
-header .menu nav li:hover{
+header .menu nav li.on a::after{
+  content: ""; display: block;
+  width: 100%;
+  height: 2px;
   background-color: #003296;
 }
 header .menu nav li:hover a{
@@ -313,7 +316,7 @@ footer .sns li:nth-child(4) a{background-image: url(../img/sns_l.png);}
   header .h_btn{
     top: 15px;
   }
-  header .h_btn .search fieldset{
+  header .h_btn .h_search fieldset{
     padding: 0 20px;
     width: 300px;
     right: -10px;
@@ -459,6 +462,18 @@ footer .sns li:nth-child(4) a{background-image: url(../img/sns_l.png);}
   .mobile_ver li:nth-child(3){left: 35%;}
   .mobile_ver li:nth-child(4){left: 55%; top: 0;}
   .mobile_ver li:nth-child(5){left: 75%; top: 0;}
+
+  
+  header .menu nav li a::after{
+    transition: all 0.3s;
+    content: ""; display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #999;
+  }
+  header .menu nav li:hover a::after{
+    width: 100%;
+  }
 
   .banner{margin: 250px 0 150px;
     width: 100%;}
